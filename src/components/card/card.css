@@ -1,0 +1,96 @@
+.card {
+    background: #fff;
+    max-width: 460px;
+    border-radius: 10px;
+    margin: 100px auto 0;
+    transition: .8s;
+    font-weight: 800;
+}
+
+.dark .card {
+    background: #2E2E2E;
+    color: #fff;
+    border: none;
+}
+
+.card:first-child {
+    margin-left: 0;
+}
+
+.card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #009FFF;
+    font-size: 18px;
+    border-radius: 10px 10px 0 0;
+}
+
+.dark .card__top {
+    background: #38383D;
+}
+
+.card__content {
+    padding: 0 10px;
+}
+
+.card__link {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.dark .card__link {
+    color: #fff;
+}
+
+.card__day {
+    margin: 0;
+}
+
+.card__daytime-title {
+    font-size: 21px;
+    margin: 20px 0 2px;
+}
+
+.card__daytime-temp {
+    font-size: 25px;
+}
+
+.card__daytime-weather {
+    width: 50px;
+}
+
+.card__daytime-weather img {
+    width: 100%;
+}
+
+.card__data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 7px;
+    font-weight: normal;
+    font-weight: 700;
+}
+
+.card__link {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.card__bottom:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 756px) {
+    .card {
+        max-width: 360px;
+    }
+}

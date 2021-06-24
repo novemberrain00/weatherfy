@@ -1,0 +1,34 @@
+.menu-list {
+    position: absolute;
+    width: 20%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #CDEBFF;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-120%);
+    transition: .8s;
+}
+
+.menu-list_active {
+    transform: translateX(0%);
+}
+
+@media screen and (max-width: 991px) {
+    .menu-list {
+        width: 31%;
+    }
+}
+
+@media screen and (max-width: 756px) {
+    .menu-list {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menu-list {
+        width: 60%;
+    }
+} 

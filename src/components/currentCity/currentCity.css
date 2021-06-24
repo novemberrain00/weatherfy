@@ -1,0 +1,10 @@
+.current-city {
+    width: 200px;
+}
+
+@media screen and (max-width: 756px) {
+    .current-city {
+        margin-left: auto;
+        text-align: right;
+    }
+}
