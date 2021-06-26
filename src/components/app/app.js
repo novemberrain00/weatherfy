@@ -19,8 +19,10 @@ class App extends Component {
         this.setBoxShadowByMouseMove = this.setBoxShadowByMouseMove.bind(this)
     }
 
-    setBoxShadowByMouseMove(e) {  //set new inner shadow when moving mouse
-        this.setState({styles: {boxShadow: `${e.pageX-300}px 0px 1000px 100px rgb(0 159 255 / 69%) inset`}})
+    setBoxShadowByMouseMove(e) {  //set new inner shadow when moving mouse4
+        const pos = e.pageX;
+        this.setState({styles: {boxShadow: `${pos-800}px 0px 1000px 100px rgb(0 159 255 / 69%) inset`}})
+
     }
     
     render() {

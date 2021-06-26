@@ -18,34 +18,36 @@ class Card extends Component {
         //theese values get string as value only when fetch ends with error
         tempMax = typeof(tempMax) === 'string' ? 'Ошибка' : Math.floor(tempMax) + ' °'; 
         tempMin = typeof(tempMin) === 'string' ? 'Ошибка' : Math.floor(tempMin) + ' °';
-
+        
         return (
             <>
-                <div className="card">
-                    <div className="card__top">
-                        <h3 className="card__day">{ day }</h3>
-                        <span className="card__date">{ dateOfMonth } { month }</span>
-                    </div>
-                    <div className="card__content">
-                        <div className="card__daytime">
-                            <h5 className="card__daytime-title">Днём</h5>
-                            <div className="card__data">
-                                <span className="card__daytime-temp">{tempMax || <AjaxLoader/>}</span>
-                                <span className="card__daytime-weather">
-                                    <img src={iconPath || 'ajax-loader.gif'} alt="sunny"></img>
-                                </span>
+                <div className="card-wrapper">
+                    <div className="card">
+                        <div className="card__top">
+                            <h3 className="card__day">{ day }</h3>
+                            <span className="card__date">{ dateOfMonth } { month }</span>
+                        </div>
+                        <div className="card__content">
+                            <div className="card__daytime">
+                                <h5 className="card__daytime-title">Днём</h5>
+                                <div className="card__data">
+                                    <span className="card__daytime-temp">{tempMax || <AjaxLoader/>}</span>
+                                    <span className="card__daytime-weather">
+                                        <img src={iconPath || 'ajax-loader.gif'} alt="sunny"></img>
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="card__daytime">
+                                <h5 className="card__daytime-title">Ночью</h5>
+                                <div className="card__data">
+                                    <span className="card__daytime-temp">{tempMin || <AjaxLoader/>}</span>
+                                    <span className="card__daytime-weather"><img src={iconPath || 'ajax-loader.gif'}  alt="sunny"></img></span>
+                                </div>
                             </div>
                         </div>
-                        <div className="card__daytime">
-                            <h5 className="card__daytime-title">Ночью</h5>
-                            <div className="card__data">
-                                <span className="card__daytime-temp">{tempMin || <AjaxLoader/>}</span>
-                                <span className="card__daytime-weather"><img src={iconPath || 'ajax-loader.gif'}  alt="sunny"></img></span>
-                            </div>
+                        <div className="card__bottom">
+                            <Link to="/more-info" className="card__link">Подробнее</Link>
                         </div>
-                    </div>
-                    <div className="card__bottom">
-                        <Link to="/more-info" className="card__link">Подробнее</Link>
                     </div>
                 </div>
             </>
