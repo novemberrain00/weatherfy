@@ -16,9 +16,21 @@ class Card extends Component {
         let {tempMax, tempMin, iconPath, day, month, dateOfMonth} = this.props; 
         
         //theese values get string as value only when fetch ends with error
-        tempMax = typeof(tempMax) === 'string' ? 'Ошибка' : Math.floor(tempMax) + ' °'; 
-        tempMin = typeof(tempMin) === 'string' ? 'Ошибка' : Math.floor(tempMin) + ' °';
-        
+        const checkData = (data) => {
+            switch(typeof(data)) {
+                case 'string':
+                    return 'Ошибка';
+                case 'number':
+                    return isNaN(data) ? false : Math.floor(data) + ' °';
+                default:
+                    return null;;
+                
+            }
+        }
+
+        tempMax = checkData(tempMax);
+        tempMin = checkData(tempMin);
+
         return (
             <>
                 <div className="card-wrapper">
