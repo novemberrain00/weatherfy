@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/weatherfy/static/css/main.4b7771ab.chunk.css",
-    "main.js": "/weatherfy/static/js/main.95d5ba2c.chunk.js",
-    "main.js.map": "/weatherfy/static/js/main.95d5ba2c.chunk.js.map",
+    "main.js": "/weatherfy/static/js/main.0efff08d.chunk.js",
+    "main.js.map": "/weatherfy/static/js/main.0efff08d.chunk.js.map",
     "runtime-main.js": "/weatherfy/static/js/runtime-main.f74454f2.js",
     "runtime-main.js.map": "/weatherfy/static/js/runtime-main.f74454f2.js.map",
-    "static/js/2.65c5e57a.chunk.js": "/weatherfy/static/js/2.65c5e57a.chunk.js",
-    "static/js/2.65c5e57a.chunk.js.map": "/weatherfy/static/js/2.65c5e57a.chunk.js.map",
+    "static/js/2.cccb88a7.chunk.js": "/weatherfy/static/js/2.cccb88a7.chunk.js",
+    "static/js/2.cccb88a7.chunk.js.map": "/weatherfy/static/js/2.cccb88a7.chunk.js.map",
     "index.html": "/weatherfy/index.html",
     "static/css/main.4b7771ab.chunk.css.map": "/weatherfy/static/css/main.4b7771ab.chunk.css.map",
-    "static/js/2.65c5e57a.chunk.js.LICENSE.txt": "/weatherfy/static/js/2.65c5e57a.chunk.js.LICENSE.txt"
+    "static/js/2.cccb88a7.chunk.js.LICENSE.txt": "/weatherfy/static/js/2.cccb88a7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f74454f2.js",
-    "static/js/2.65c5e57a.chunk.js",
+    "static/js/2.cccb88a7.chunk.js",
     "static/css/main.4b7771ab.chunk.css",
-    "static/js/main.95d5ba2c.chunk.js"
+    "static/js/main.0efff08d.chunk.js"
   ]
 }
