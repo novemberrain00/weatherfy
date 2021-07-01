@@ -4,7 +4,7 @@ import Modal from '../modal';
 import AppHeader from '../appHeader';
 import MenuList from '../menuList';
 import { connect } from 'react-redux';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import './app.css';
 
 class App extends Component {

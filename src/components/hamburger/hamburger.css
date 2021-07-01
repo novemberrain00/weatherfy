@@ -1,31 +1,3 @@
-@keyframes shakeHamburgerLine1 {
-    33% {
-        transform: translateX(20%);
-    }
-
-    66% {
-        transform: translateX(-20%);
-    }
-
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-@keyframes shakeHamburgerLine2 {
-    33% {
-        transform: translateX(-20%);
-    }
-
-    66% {
-        transform: translateX(20%);
-    }
-
-    100% {
-        transform: translateX(0%);
-    }
-}
-
 .hamburger {
     display: flex;
     justify-content: space-around;
@@ -38,11 +10,6 @@
 
 .hamburger_active {
     transform: translateX(500%);
-}
-
-.hamburger .hamburger__line {
-    transform: translateY(0%) rotate(0deg);
-    transition: .8s;
 }
 
 .hamburger_active .hamburger__line:first-child {

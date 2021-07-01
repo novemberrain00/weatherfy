@@ -8,8 +8,7 @@ class MenuList extends Component {
         const classList = this.props.menuOpened ? 'menu-list menu-list_active' : 'menu-list';
         return (
             <ul className={classList}>
-                <MenuListItem/>
-                <MenuListItem/>
+                <MenuListItem text="Мой GitHub" path="https://github.com/novemberrain00"/>
             </ul>
         )
     }
